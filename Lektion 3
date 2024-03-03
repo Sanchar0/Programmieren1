@@ -1,4 +1,4 @@
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Übung1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Übung1^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 package arbeit;
 
 import java.util.Scanner;
@@ -21,3 +21,216 @@ public class l1 {
 		
 	}
 }
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung 2^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+package arbeit;
+
+import java.util.Scanner;
+
+public class l1 {
+
+	public static void main(String[] args) {
+	
+		Scanner input = new Scanner(System.in);
+	
+		System.out.println("Bitte geben Sie durchmesser von ersten Pizza");
+		int dm1 = input.nextInt();
+		System.out.println("Bitte geben Sie die Preis von ersten Pizza");
+		double pr1 = input.nextDouble();
+		System.out.println("Bitte geben Sie durchmesser von zweiten Pizza");
+		int dm2 = input.nextInt();
+		System.out.println("Bitte geben Sie die Preis von zweiten Pizza");
+		double pr2 = input.nextDouble();
+		double flaeche1 = Math.PI * dm1*dm1; 
+		double flaeche2 = Math.PI * dm2* dm2;
+		double pv1 = flaeche1 / pr1;
+		double pv2 = flaeche2 / pr2;
+		if(pv1 > pv2) {
+			System.out.println("Erste Pizza hat  bessere PreisVerhltnis");
+		}else if (pv1<pv2) {
+			System.out.println("Zweite Pizza hat bessere PreisVerhältnis");
+		}else {
+			System.out.println("Beide haben gleiche Preisverhhaltnis");
+		}	
+	}
+}
+^^^^^^^^^^^^^^^^^^^^^^^^ubung3^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package arbeit;
+
+import java.util.Scanner;
+
+public class l1 {
+
+	public static void main(String[] args) {
+	
+		Scanner input = new Scanner(System.in);
+		System.out.println("Bitte geben Sie ein Character");
+		char c = input.nextLine().charAt(0);
+		if(c >= 'A' && c<= 'Z') {
+			System.out.println("Großbuchstabe");
+		}
+		else if((c>='0' && c<=9) || (c>='a' && c<= 'f') || (c>='A' && c<= 'F')){
+			System.out.println("hexadezimal");
+		}
+		else if (c == '0'|| c == '1') {
+		System.out.println("binaere Zahl");
+	}
+		else if ((c>= '0') && (c <= '7')) {
+		System.out.println("oktale Ziffer");
+		}else {
+         System.out.println("Unbekannt");
+     }
+	
+		}
+	}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ubung4^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package arbeit;
+
+import java.util.Scanner;
+
+public class l1 {
+
+	public static void main(String[] args) {
+	
+		Scanner input = new Scanner(System.in);
+ int sonuc = (int) ((Math.random()* 6) + 1);
+	
+	switch (sonuc) {
+	case 1:
+		System.out.println("Eins gewürfelt");
+		break;
+	case 2: 
+		System.out.println("Zwei gewürfelt");
+		break;
+	case 3: 
+		System.out.println("Drei gewürfelt");
+	case 4:
+		System.out.println("Vier gewürfelt");
+	break;
+	case 5:
+		System.out.println("Fünf gewürfelt");
+	break;
+	default : System.out.println("Sechs gewürfelt");
+	}
+	}
+	}
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung5^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package lektion3;
+
+import java.util.Scanner;
+
+public class ubung5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int matrikelnummer;
+		System.out.println("Geben Sie Matrikelnummer");
+		matrikelnummer = input.nextInt();
+		  if ( (matrikelnummer >= 5000000) && ( matrikelnummer <= 5099999)) { 
+			  System.out.println("Matrikelnummer ist gültig");
+		  }
+		  else if (( matrikelnummer >= 5100000) && ( matrikelnummer <= 5199999)) {
+			  System.out.println("Matrikelnummer ist gültig");
+			  }
+		  else if ( ( matrikelnummer >= 6100000) && (matrikelnummer <= 6199999)) {
+			  System.out.println("Matrikelnummer ist gültig");
+		  }
+		  else {
+			  System.out.println("Matrikelnummer ist nicht gültig");
+		  }
+	}
+}
+^^^^^^^^^^^^^^^^^^^^^^^^übung6^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package lektion3;
+
+import java.util.Scanner;
+
+public class ubung5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+	 System.out.println("Bitte geben Sie Jahr");
+		int jahr = input.nextInt();
+		if(jahr %400 == 0) {
+			System.out.println("Schaltjahr");
+		}else if (jahr%100 == 0) {
+			System.out.println("kein Schaltjahr");
+		}else if (jahr%4==0) {
+			System.out.println("Schaltjahr");
+		}else {
+			System.out.println("Kein Schaltjahr");
+		}	
+	}
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung7^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package lektion3;
+
+import java.util.Scanner;
+
+public class ubung6 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+	System.out.println("Biite geben Sie einen Wert für Stunde");
+		int stunde = scanner.nextInt();
+	System.out.println("Bitte geben Sie einen Wert für Minute");
+		int minute = scanner.nextInt();
+		System.out.println("Bitte geben Sie einen Wert für Sekunde");
+		int sekunde = scanner.nextInt();
+		
+		if (stunde >= 0 && stunde <=24) {
+			if (minute >=0 && minute<60) {
+				if(sekunde >= 0 && sekunde<60) {
+					System.out.println("Gültige Uhrzeit");
+				}else {
+					System.out.println("keine gültige Uhrzeit : Sekunden ist unbekkant");
+				}
+			}else {
+				System.out.println("keine gültige Uhrzeit : Minute ist unbekannt");
+			}
+		}else {
+			System.out.println("Keine gültige Uhrzeit : Stunden ist unbekannt");
+		}
+			}
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung8^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package lektion3;
+
+import java.util.Scanner;
+
+public class ubung6 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("char1(t oder f) : ");
+		char char1 = scanner.next().charAt(0);
+	System.out.println("Char2(t oder f :");
+		char char2 =scanner.next().charAt(0);
+		
+		
+		if(char1 =='f' || char1== 't') {
+		   if(char2 == 'f' || char2 == 't') {
+			   if(char1 == 'f' && char1=='f') {
+				   System.out.println(0);
+			   }else if (char1== 'f' && char2 =='t') {
+				   System.out.println(1);
+			   }else if (char1=='t' && char2=='f') {
+				   System.out.println(2);
+			   }else {
+				   System.out.println(3);
+			   }
+		   }else {
+			   System.out.println("Char2 ist nicht f oder t");
+		   }
+		}else {
+			System.out.println("Char1 ist nicht f oder t");
+		}
+	}
+}
+
+
+
+
+
+
