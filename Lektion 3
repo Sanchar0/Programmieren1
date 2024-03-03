@@ -1,1 +1,23 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Übung1
+package arbeit;
 
+import java.util.Scanner;
+
+public class l1 {
+
+	public static void main(String[] args) {
+	
+		Scanner input = new Scanner(System.in);
+	
+		
+		
+		System.out.print("Bitte geben Sie ein Zahl :");
+		double zahl = input.nextDouble();
+		if ((zahl % 7 )== 0) {
+			System.out.println("Die eingegebene Zahl ist durch 7 teilbar");
+		}else {
+			System.out.println("Die eingegebene Zahl ist durch 7 nicht teilbar");
+		}
+		
+	}
+}
