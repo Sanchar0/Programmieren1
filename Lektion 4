@@ -1,1 +1,65 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^übung1^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package lektion3;
+
+import java.util.Scanner;
+
+public class ubung6 {
+
+	public static void main(String[] args)throws InterruptedException {
+		Scanner scanner = new Scanner(System.in);
+    for(int i =15; i>=0; i--) {  	
+    	System.out.println(i);
+    	Thread.sleep(1000);
+    }		
+	}
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung2^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package lektion3;
+
+import java.util.Scanner;
+
+public class ubung6 {
+
+	public static void main(String[] args)throws InterruptedException {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bitte Falldauer in Sekunden eingeben");
+		int t;	
+		 t =scanner.nextInt();
+   for(int i=1; i<=t; i++) {
+		if (i % 5 ==1) {
+		   double s = (1.0/2.0) * 9.80665 * i *i;
+	   	System.out.println("Zeit " +i + " Sekunden : Zurückgelegte Strecke : " + s + "m" );
+	   	Thread.sleep(5000);
+   }
+   }	
+	}
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung3aaaa^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package lektion3;
+
+import java.util.Scanner;
+
+public class ubung6 {
+
+	public static void main(String[] args)throws InterruptedException {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bitte geben Sie ein Zahl ein");
+		int zahl = scanner.nextInt();
+		if (zahl <=2) {
+			System.out.println("Untersuchte Zahl ist kein Primzahl");
+		}
+		int kontroller = 2;
+		while (kontroller<zahl) {
+			if(zahl%kontroller == 0) {
+			System.out.println("Untersuchte Zahl ist kein Primzahl");
+			break;
+			}else {
+				kontroller++;
+				if(zahl==kontroller) {
+					System.out.println("Untersuchte Zahl ist ein Primzahl");
+				}
+			}	
+	}
+}
+}
 
