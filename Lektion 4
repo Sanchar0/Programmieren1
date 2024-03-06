@@ -62,4 +62,24 @@ public class ubung6 {
 	}
 }
 }
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung4^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+package arbeit;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class l1 {
+
+	public static void main(String[] args) {
+		DecimalFormat df = new DecimalFormat("0.00");
+		double c;
+		int f=0;
+		c = 5.0/9.0 * (f - 32);
+	System.out.println("Fahrenheit\tCelcius");
+		for(f = 0; f<=300; f++) {
+			c = 5.0/9.0 * (f - 32);
+			System.out.println(f + "\t\t" + df.format(c));
+		}	
+	}
+}
 
