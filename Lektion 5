@@ -1,1 +1,30 @@
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^übung2^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+package arbeit;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class l1 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bitte geben Sie ein Basis (double)");
+		double basis = scanner.nextDouble();
+		System.out.println("Bitte geben Sie ein Exponent");		
+		 int quer = 1;	
+		 int ex = scanner.nextInt();
+		 if(ex>0) {
+			 for(int i= ex; i>=1; i--) {
+				 quer *= basis;
+			 }
+			 System.out.println(quer);
+		 } else if (ex<0) {
+			 for(int i = ex; i<=-1; i++) {
+				quer *= basis;
+			 } System.out.println((1.0)/quer);
+		 } else {
+			 System.out.println(1);
+		 }	
+	}
+}
