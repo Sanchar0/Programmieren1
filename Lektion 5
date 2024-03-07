@@ -28,3 +28,27 @@ public class l1 {
 		 }	
 	}
 }
+^^^^^^^^^^^^^^^^^^^^ü6^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+package arbeit;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class l1 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int zahl;
+		int summe=0;
+		System.out.println("Bitte geben Sie ein zahl");
+		do {
+			
+			 zahl = scanner.nextInt();
+			 summe += zahl;
+		}while(zahl!=0);
+
+		System.out.println("Summe : "+ summe);
+		
+	}
+}
